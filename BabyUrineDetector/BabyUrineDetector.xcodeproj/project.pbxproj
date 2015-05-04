@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FEF441541AF717040054BB41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF441531AF717040054BB41 /* main.m */; };
+		FEF441571AF717040054BB41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF441561AF717040054BB41 /* AppDelegate.m */; };
+		FEF4415A1AF717040054BB41 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF441591AF717040054BB41 /* ViewController.m */; };
+		FEF4415D1AF717040054BB41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF4415B1AF717040054BB41 /* Main.storyboard */; };
+		FEF4415F1AF717040054BB41 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEF4415E1AF717040054BB41 /* Images.xcassets */; };
+		FEF441621AF717040054BB41 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEF441601AF717040054BB41 /* LaunchScreen.xib */; };
+		FEF4416E1AF717040054BB41 /* BabyUrineDetectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF4416D1AF717040054BB41 /* BabyUrineDetectorTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FEF441681AF717040054BB41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEF441461AF717040054BB41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEF4414D1AF717040054BB41;
+			remoteInfo = BabyUrineDetector;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FEF4414E1AF717040054BB41 /* BabyUrineDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyUrineDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEF441521AF717040054BB41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEF441531AF717040054BB41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FEF441551AF717040054BB41 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FEF441561AF717040054BB41 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FEF441581AF717040054BB41 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FEF441591AF717040054BB41 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FEF4415C1AF717040054BB41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FEF4415E1AF717040054BB41 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FEF441611AF717040054BB41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FEF441671AF717040054BB41 /* BabyUrineDetectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabyUrineDetectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEF4416C1AF717040054BB41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEF4416D1AF717040054BB41 /* BabyUrineDetectorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BabyUrineDetectorTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEF4414B1AF717040054BB41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEF441641AF717040054BB41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FEF441451AF717040054BB41 = {
+			isa = PBXGroup;
+			children = (
+				FEF441501AF717040054BB41 /* BabyUrineDetector */,
+				FEF4416A1AF717040054BB41 /* BabyUrineDetectorTests */,
+				FEF4414F1AF717040054BB41 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FEF4414F1AF717040054BB41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEF4414E1AF717040054BB41 /* BabyUrineDetector.app */,
+				FEF441671AF717040054BB41 /* BabyUrineDetectorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEF441501AF717040054BB41 /* BabyUrineDetector */ = {
+			isa = PBXGroup;
+			children = (
+				FEF441551AF717040054BB41 /* AppDelegate.h */,
+				FEF441561AF717040054BB41 /* AppDelegate.m */,
+				FEF441581AF717040054BB41 /* ViewController.h */,
+				FEF441591AF717040054BB41 /* ViewController.m */,
+				FEF4415B1AF717040054BB41 /* Main.storyboard */,
+				FEF4415E1AF717040054BB41 /* Images.xcassets */,
+				FEF441601AF717040054BB41 /* LaunchScreen.xib */,
+				FEF441511AF717040054BB41 /* Supporting Files */,
+			);
+			path = BabyUrineDetector;
+			sourceTree = "<group>";
+		};
+		FEF441511AF717040054BB41 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEF441521AF717040054BB41 /* Info.plist */,
+				FEF441531AF717040054BB41 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEF4416A1AF717040054BB41 /* BabyUrineDetectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				FEF4416D1AF717040054BB41 /* BabyUrineDetectorTests.m */,
+				FEF4416B1AF717040054BB41 /* Supporting Files */,
+			);
+			path = BabyUrineDetectorTests;
+			sourceTree = "<group>";
+		};
+		FEF4416B1AF717040054BB41 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEF4416C1AF717040054BB41 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEF4414D1AF717040054BB41 /* BabyUrineDetector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEF441711AF717040054BB41 /* Build configuration list for PBXNativeTarget "BabyUrineDetector" */;
+			buildPhases = (
+				FEF4414A1AF717040054BB41 /* Sources */,
+				FEF4414B1AF717040054BB41 /* Frameworks */,
+				FEF4414C1AF717040054BB41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BabyUrineDetector;
+			productName = BabyUrineDetector;
+			productReference = FEF4414E1AF717040054BB41 /* BabyUrineDetector.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FEF441661AF717040054BB41 /* BabyUrineDetectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEF441741AF717040054BB41 /* Build configuration list for PBXNativeTarget "BabyUrineDetectorTests" */;
+			buildPhases = (
+				FEF441631AF717040054BB41 /* Sources */,
+				FEF441641AF717040054BB41 /* Frameworks */,
+				FEF441651AF717040054BB41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEF441691AF717040054BB41 /* PBXTargetDependency */,
+			);
+			name = BabyUrineDetectorTests;
+			productName = BabyUrineDetectorTests;
+			productReference = FEF441671AF717040054BB41 /* BabyUrineDetectorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEF441461AF717040054BB41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "王泽一";
+				TargetAttributes = {
+					FEF4414D1AF717040054BB41 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					FEF441661AF717040054BB41 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = FEF4414D1AF717040054BB41;
+					};
+				};
+			};
+			buildConfigurationList = FEF441491AF717040054BB41 /* Build configuration list for PBXProject "BabyUrineDetector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FEF441451AF717040054BB41;
+			productRefGroup = FEF4414F1AF717040054BB41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEF4414D1AF717040054BB41 /* BabyUrineDetector */,
+				FEF441661AF717040054BB41 /* BabyUrineDetectorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEF4414C1AF717040054BB41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEF4415D1AF717040054BB41 /* Main.storyboard in Resources */,
+				FEF441621AF717040054BB41 /* LaunchScreen.xib in Resources */,
+				FEF4415F1AF717040054BB41 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEF441651AF717040054BB41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEF4414A1AF717040054BB41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEF4415A1AF717040054BB41 /* ViewController.m in Sources */,
+				FEF441571AF717040054BB41 /* AppDelegate.m in Sources */,
+				FEF441541AF717040054BB41 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEF441631AF717040054BB41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEF4416E1AF717040054BB41 /* BabyUrineDetectorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FEF441691AF717040054BB41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEF4414D1AF717040054BB41 /* BabyUrineDetector */;
+			targetProxy = FEF441681AF717040054BB41 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FEF4415B1AF717040054BB41 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEF4415C1AF717040054BB41 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FEF441601AF717040054BB41 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEF441611AF717040054BB41 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FEF4416F1AF717040054BB41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FEF441701AF717040054BB41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEF441721AF717040054BB41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BabyUrineDetector/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FEF441731AF717040054BB41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BabyUrineDetector/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FEF441751AF717040054BB41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BabyUrineDetectorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BabyUrineDetector.app/BabyUrineDetector";
+			};
+			name = Debug;
+		};
+		FEF441761AF717040054BB41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BabyUrineDetectorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BabyUrineDetector.app/BabyUrineDetector";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEF441491AF717040054BB41 /* Build configuration list for PBXProject "BabyUrineDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEF4416F1AF717040054BB41 /* Debug */,
+				FEF441701AF717040054BB41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEF441711AF717040054BB41 /* Build configuration list for PBXNativeTarget "BabyUrineDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEF441721AF717040054BB41 /* Debug */,
+				FEF441731AF717040054BB41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FEF441741AF717040054BB41 /* Build configuration list for PBXNativeTarget "BabyUrineDetectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEF441751AF717040054BB41 /* Debug */,
+				FEF441761AF717040054BB41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEF441461AF717040054BB41 /* Project object */;
+}
