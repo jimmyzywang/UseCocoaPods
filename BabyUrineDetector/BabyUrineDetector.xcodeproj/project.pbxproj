@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C221C8BD1DE83B393CC0F397 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F238D9AFC7763EA13C79CAB /* libPods.a */; };
 		FEF441541AF717040054BB41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF441531AF717040054BB41 /* main.m */; };
 		FEF441571AF717040054BB41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF441561AF717040054BB41 /* AppDelegate.m */; };
 		FEF4415A1AF717040054BB41 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF441591AF717040054BB41 /* ViewController.m */; };
@@ -27,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		876309A3574D6549F05F02DC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9F0ADB9D710404F0A43FFED5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9F238D9AFC7763EA13C79CAB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF4414E1AF717040054BB41 /* BabyUrineDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyUrineDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF441521AF717040054BB41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEF441531AF717040054BB41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C221C8BD1DE83B393CC0F397 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +65,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D862A0B1842EBEA7F045BEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F238D9AFC7763EA13C79CAB /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE149B1F1C2FE065D53EFF63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				876309A3574D6549F05F02DC /* Pods.debug.xcconfig */,
+				9F0ADB9D710404F0A43FFED5 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FEF441451AF717040054BB41 = {
 			isa = PBXGroup;
 			children = (
 				FEF441501AF717040054BB41 /* BabyUrineDetector */,
 				FEF4416A1AF717040054BB41 /* BabyUrineDetectorTests */,
 				FEF4414F1AF717040054BB41 /* Products */,
+				CE149B1F1C2FE065D53EFF63 /* Pods */,
+				6D862A0B1842EBEA7F045BEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEF441711AF717040054BB41 /* Build configuration list for PBXNativeTarget "BabyUrineDetector" */;
 			buildPhases = (
+				06C7135EC76485489F9F945B /* Check Pods Manifest.lock */,
 				FEF4414A1AF717040054BB41 /* Sources */,
 				FEF4414B1AF717040054BB41 /* Frameworks */,
 				FEF4414C1AF717040054BB41 /* Resources */,
+				9C4B8B3E12B2C2909E680236 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +239,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06C7135EC76485489F9F945B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9C4B8B3E12B2C2909E680236 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FEF4414A1AF717040054BB41 /* Sources */ = {
@@ -345,6 +404,7 @@
 		};
 		FEF441721AF717040054BB41 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 876309A3574D6549F05F02DC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BabyUrineDetector/Info.plist;
@@ -355,6 +415,7 @@
 		};
 		FEF441731AF717040054BB41 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F0ADB9D710404F0A43FFED5 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BabyUrineDetector/Info.plist;
@@ -416,6 +477,7 @@
 				FEF441731AF717040054BB41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FEF441741AF717040054BB41 /* Build configuration list for PBXNativeTarget "BabyUrineDetectorTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +486,7 @@
 				FEF441761AF717040054BB41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
