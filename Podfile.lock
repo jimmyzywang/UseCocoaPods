@@ -1,9 +1,9 @@
 PODS:
   - ASIHTTPRequest (1.8.2):
-    - ASIHTTPRequest/ASIWebPageRequest
-    - ASIHTTPRequest/CloudFiles
-    - ASIHTTPRequest/Core
-    - ASIHTTPRequest/S3
+    - ASIHTTPRequest/ASIWebPageRequest (= 1.8.2)
+    - ASIHTTPRequest/CloudFiles (= 1.8.2)
+    - ASIHTTPRequest/Core (= 1.8.2)
+    - ASIHTTPRequest/S3 (= 1.8.2)
   - ASIHTTPRequest/ASIWebPageRequest (1.8.2):
     - ASIHTTPRequest/Core
   - ASIHTTPRequest/CloudFiles (1.8.2):
@@ -13,12 +13,15 @@ PODS:
   - ASIHTTPRequest/S3 (1.8.2):
     - ASIHTTPRequest/Core
   - Reachability (3.2)
+  - YmsCoreBluetooth (1.09.1)
 
 DEPENDENCIES:
   - ASIHTTPRequest (~> 1.8.2)
+  - YmsCoreBluetooth (~> 1.09.1)
 
 SPEC CHECKSUMS:
-  ASIHTTPRequest: 2c8335b49410c0e2ad42829c438e74d454b77590
-  Reachability: 1ef8adf5c4e3d362f96515d4278f68dad3c26930
+  ASIHTTPRequest: ec013992946676b7978dcbde6396d57312d21db4
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  YmsCoreBluetooth: e731659f7f791f3f7b3a63f2b1a937d4618a8bae
 
-COCOAPODS: 0.34.4
+COCOAPODS: 0.37.0

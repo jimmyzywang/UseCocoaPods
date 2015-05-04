@@ -42,3 +42,9 @@
 #define COCOAPODS_VERSION_MINOR_Reachability 2
 #define COCOAPODS_VERSION_PATCH_Reachability 0
 
+// YmsCoreBluetooth
+#define COCOAPODS_POD_AVAILABLE_YmsCoreBluetooth
+#define COCOAPODS_VERSION_MAJOR_YmsCoreBluetooth 1
+#define COCOAPODS_VERSION_MINOR_YmsCoreBluetooth 9
+#define COCOAPODS_VERSION_PATCH_YmsCoreBluetooth 1
+
