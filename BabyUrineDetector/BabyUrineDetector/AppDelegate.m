@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "BUDScanPeripheralViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,9 +17,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    ViewController* viewCtrl = [[ViewController alloc] init];
-    UINavigationController* naviCtrl = [[UINavigationController alloc] initWithRootViewController:viewCtrl];
-    self.window.rootViewController = naviCtrl;
+    BUDScanPeripheralViewController* scanCtrl = [[BUDScanPeripheralViewController alloc] init];
+    self.window.rootViewController = scanCtrl;
     // Override point for customization after application launch.
     return YES;
 }

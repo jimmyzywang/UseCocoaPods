@@ -4,7 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-YmsCoreBluetooth.xcscheme</key>
+		<key>Pods-ASIHTTPRequest.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Reachability.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>5F23F39453B3084542E98BCA</key>
+		<key>66CC065A650FC4D86BEF76C2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C238BB0AECDCF9B79E4A473D</key>
+		<key>D9CC8757C11A5D3E99763C5F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F0A2644C9E44ED69A69FBDC4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

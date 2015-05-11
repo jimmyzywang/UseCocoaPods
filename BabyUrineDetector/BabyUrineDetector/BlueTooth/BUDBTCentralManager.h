@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "YMSCBCentralManager.h"
 
-@interface BUDBTCentralManager : YMSCBCentralManager
 
-+ (BUDBTCentralManager *)initSharedServiceWithDelegate:(id)delegate;
+@interface BUDBTCentralManager : NSObject
 
 +(BUDBTCentralManager*)sharedInstance;
+
+-(void)beginToScan;
 
 @end

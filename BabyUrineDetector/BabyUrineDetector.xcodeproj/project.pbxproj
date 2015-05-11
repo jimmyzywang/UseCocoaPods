@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C221C8BD1DE83B393CC0F397 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F238D9AFC7763EA13C79CAB /* libPods.a */; };
+		FECEF1AC1AFB42AF00E5DBAE /* BUDConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = FECEF1AB1AFB42AF00E5DBAE /* BUDConstants.m */; };
+		FECEF1AF1AFB448700E5DBAE /* BUDNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = FECEF1AE1AFB448700E5DBAE /* BUDNotification.m */; };
+		FECEF1B41AFB468B00E5DBAE /* BUDScanPeripheralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECEF1B21AFB468B00E5DBAE /* BUDScanPeripheralViewController.m */; };
 		FEF441541AF717040054BB41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF441531AF717040054BB41 /* main.m */; };
 		FEF441571AF717040054BB41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF441561AF717040054BB41 /* AppDelegate.m */; };
 		FEF4415A1AF717040054BB41 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF441591AF717040054BB41 /* ViewController.m */; };
@@ -32,6 +35,12 @@
 		876309A3574D6549F05F02DC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9F0ADB9D710404F0A43FFED5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9F238D9AFC7763EA13C79CAB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FECEF1AA1AFB42AF00E5DBAE /* BUDConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUDConstants.h; path = Model/BUDConstants.h; sourceTree = "<group>"; };
+		FECEF1AB1AFB42AF00E5DBAE /* BUDConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BUDConstants.m; path = Model/BUDConstants.m; sourceTree = "<group>"; };
+		FECEF1AD1AFB448700E5DBAE /* BUDNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUDNotification.h; sourceTree = "<group>"; };
+		FECEF1AE1AFB448700E5DBAE /* BUDNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUDNotification.m; sourceTree = "<group>"; };
+		FECEF1B11AFB468B00E5DBAE /* BUDScanPeripheralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUDScanPeripheralViewController.h; path = Controllers/BUDScanPeripheralViewController.h; sourceTree = "<group>"; };
+		FECEF1B21AFB468B00E5DBAE /* BUDScanPeripheralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BUDScanPeripheralViewController.m; path = Controllers/BUDScanPeripheralViewController.m; sourceTree = "<group>"; };
 		FEF4414E1AF717040054BB41 /* BabyUrineDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyUrineDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF441521AF717040054BB41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEF441531AF717040054BB41 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,6 +94,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FECEF1A91AFB429100E5DBAE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FECEF1AA1AFB42AF00E5DBAE /* BUDConstants.h */,
+				FECEF1AB1AFB42AF00E5DBAE /* BUDConstants.m */,
+				FECEF1AD1AFB448700E5DBAE /* BUDNotification.h */,
+				FECEF1AE1AFB448700E5DBAE /* BUDNotification.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FECEF1B01AFB45FB00E5DBAE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FECEF1B11AFB468B00E5DBAE /* BUDScanPeripheralViewController.h */,
+				FECEF1B21AFB468B00E5DBAE /* BUDScanPeripheralViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		FEF441451AF717040054BB41 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +137,8 @@
 		FEF441501AF717040054BB41 /* BabyUrineDetector */ = {
 			isa = PBXGroup;
 			children = (
+				FECEF1B01AFB45FB00E5DBAE /* Controllers */,
+				FECEF1A91AFB429100E5DBAE /* Model */,
 				FEF441991AF781310054BB41 /* BlueTooth */,
 				FEF441551AF717040054BB41 /* AppDelegate.h */,
 				FEF441561AF717040054BB41 /* AppDelegate.m */,
@@ -293,8 +324,11 @@
 			files = (
 				FEF4415A1AF717040054BB41 /* ViewController.m in Sources */,
 				FEF4419C1AF781750054BB41 /* BUDBTCentralManager.m in Sources */,
+				FECEF1AF1AFB448700E5DBAE /* BUDNotification.m in Sources */,
 				FEF441571AF717040054BB41 /* AppDelegate.m in Sources */,
 				FEF441541AF717040054BB41 /* main.m in Sources */,
+				FECEF1B41AFB468B00E5DBAE /* BUDScanPeripheralViewController.m in Sources */,
+				FECEF1AC1AFB42AF00E5DBAE /* BUDConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

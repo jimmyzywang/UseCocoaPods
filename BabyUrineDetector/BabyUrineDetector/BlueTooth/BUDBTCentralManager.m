@@ -7,56 +7,53 @@
 //
 
 #import "BUDBTCentralManager.h"
-#import "YMSCBCentralManager.h"
+#import "BUDConstants.h"
+#import "BUDNotification.h"
+#import <CoreBluetooth/CoreBluetooth.h>
 
 @interface BUDBTCentralManager() <CBCentralManagerDelegate>
 
 @end
 
-static BUDBTCentralManager* sharedInstance;
-
 @implementation BUDBTCentralManager{
+    CBCentralManager *_centralManager;
 }
 
-+ (BUDBTCentralManager *)initSharedServiceWithDelegate:(id)delegate{
-    if (sharedInstance == nil) {
-        dispatch_queue_t queue = dispatch_queue_create("com.yummymelon.deanna", 0);
-        
-        NSArray *nameList = @[@"TI BLE Sensor Tag", @"SensorTag"];
-        sharedInstance = [[super allocWithZone:NULL] initWithKnownPeripheralNames:nameList
-                                                                            queue:queue
-                                                             useStoredPeripherals:YES
-                                                                         delegate:delegate];
-    }
-    return sharedInstance;
+-(void)beginToScan{
+    NSDictionary *options = @{ CBCentralManagerScanOptionAllowDuplicatesKey: @YES };
+    [[self p_cbCentralManager] scanForPeripheralsWithServices:nil options:options];
 }
 
 +(BUDBTCentralManager*)sharedInstance{
-    NSAssert(sharedInstance != nil, @"sharedInstance must invoke after init");
+    static BUDBTCentralManager* sharedInstance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedInstance = [[BUDBTCentralManager alloc] init];
+    });
     return sharedInstance;
 }
 
--(void)startScan{
-    NSDictionary *options = @{ CBCentralManagerScanOptionAllowDuplicatesKey: @YES };
-    __weak BUDBTCentralManager *this = self;
-    [self scanForPeripheralsWithServices:nil
-                                 options:options
-                               withBlock:^(CBPeripheral *peripheral, NSDictionary *advertisementData, NSNumber *RSSI, NSError *error) {
-                                   if (error) {
-                                       NSLog(@"Something bad happened with scanForPeripheralWithServices:options:withBlock:");
-                                       return;
-                                   }
-                                   
-                                   NSLog(@"DISCOVERED: %@, %@, %@ db", peripheral, peripheral.name, RSSI);
-                                   [this p_onFoundPeripheral:peripheral];
-                               }];
-    
+-(CBCentralManager*)p_cbCentralManager{
+    if (_centralManager == nil) {
+        dispatch_queue_t queue = dispatch_queue_create("com.baby.urine.detector", 0);
+        _centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:queue];
+    }
+    return _centralManager;
 }
 
+
 -(void)p_onFoundPeripheral:(CBPeripheral *)peripheral{
-    if ([peripheral.name isEqualToString:@"TI BLE Sensor Tag"]) {
-        NSAssert(NO, @"abcd");
+    if ([peripheral.name isEqualToString:kTIBLEName]) {
+        [[self p_cbCentralManager] stopScan];
+        [[NSNotificationCenter defaultCenter] postNotificationName:kBTHasFoundTIBLENotification object:nil];
     }
 }
 
+-(void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI{
+    [self p_onFoundPeripheral:peripheral];
+}
+
+-(void)centralManagerDidUpdateState:(CBCentralManager *)central{
+    
+}
 @end

@@ -10,7 +10,7 @@
 #import "BUDBTCentralManager.h"
 
 
-@interface ViewController () <CBCentralManagerDelegate>
+@interface ViewController ()
 
 @end
 
@@ -51,17 +51,6 @@
     }
 }
 
--(void)p_onScanButtonClicked:(id)sender{
-    BUDBTCentralManager* manager = [BUDBTCentralManager initSharedServiceWithDelegate:self];
-    [[BUDBTCentralManager sharedInstance] startScan];
-    [_indicatorView startAnimating];
-    UIButton* scanButton = (UIButton*)sender;
-    [scanButton setEnabled:NO];
-}
-
--(void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI{
-    NSLog(@"DISCOVERED: %@, %@, %@ db", peripheral, peripheral.name, RSSI);
-}
 
 
 @end
